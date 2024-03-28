@@ -124,3 +124,18 @@ section {
 /*3. FEATURE BOX
   Let's use some more nuanced selection and "flex" rule work on the flex items to create a reusable "Feature Box" component.
 */
+.flex__feature_box_container {
+  display: flex;
+  flex-wrap: wrap;
+
+  /*all children*/
+  &> * {
+    flex: 1 1 300px;
+    height: 200px;  /*usually don't want but give some body to the numbers */
+  }
+
+  /*child - could target w/class name but also have this*/
+  &> :first-child {
+    flex: 1 1 100%;
+  }
+}

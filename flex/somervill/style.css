@@ -1,0 +1,121 @@
+/*
+  Flex Demos
+  1. Basic
+  2 & 3 use Flex Grow, Shrink, and Basis
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+
+/*=====
+GENERAL
+=====*/
+
+:root {
+  --laser-lemon: #e6eb3f;
+  --violet: #705c92;
+  --watermelon: #eb7878;
+  --custard: #fdffc6;
+}
+
+body {
+  background-color: var(--laser-lemon);
+  color: var(--violet);
+  text-align: center;
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 50px;
+}
+
+/*========
+TYPOGRAPHY
+========*/
+
+h1,h2 { font-family: Monoton; }
+h1 { font-size: 4rem; margin: 2.75em 0; text-align: center; }
+h2 { font-size: 2.5rem; margin: 1em 0; }
+h2 > span { font-size: 1.5rem; }
+
+/*====
+IMAGES
+====*/
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.img_cover {
+  height: 100%;
+  object-fit: cover;
+}
+
+/*============================
+SECTIONS - SHARED BASIC DESIGN
+============================*/
+
+section {
+  max-width: 1200px;
+  margin: 20rem auto;
+  padding: 25px;
+  box-shadow: 1px 3px 12px -1px var(--violet);
+
+  /* Shared styles for flexbox containers within each section */
+  .flex__basic_container,
+  .flex__feature_box_container,
+  .flex__offset_proportions_container {
+    background-color: var(--watermelon);
+
+    /* Border to help distinguish flex items */
+    &> * {
+      border: 1px solid whitesmoke;
+    }
+  }
+
+}
+
+/*RESOURCES FOR REFERENCE
+  - Lecture Slides: https://docs.google.com/presentation/d/1XGYJ73ZUigAhki46Ha_Il79Fp2VIPFXInFTkO8PGOsw/edit?usp=sharing
+
+  - CSS Tricks' awesome reference guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+/*BASIC FLEXBOX
+  1. What element should you select and define "display: flex;"?
+  2. How can you align the flex items to have an even amount of space between them on the row?
+*/
+
+/* Apply basic max width for easier viewing */
+#flex__basic {
+  max-width: 1000px;
+  /* Some helpful padding for the children boxes */
+  .box { padding: 10px; }
+
+  /* Start your flexbox practice after this comment */
+}
+
+.flex__basic_container{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+/*2. OFFSET PROPORTIONS WITH GROW, SHRINK, and BASIS
+  1. What element should you select and define "display: flex;"?
+  2. How can we use the "flex" rule on the flex items to create a reusable offset 2 item row component?
+*/
+
+.flex__offset_proportions_container{
+  display: flex;
+}
+
+.div_1 {
+  flex: 1 2 400px;
+}
+
+.div_2 {
+  width: 200px;
+}
+
+/*3. FEATURE BOX
+  Let's use some more nuanced selection and "flex" rule work on the flex items to create a reusable "Feature Box" component.
+*/

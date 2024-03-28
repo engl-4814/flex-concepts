@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Grow, Shrink, Basis</title>
+  <link rel="stylesheet" href="styleflex.css" />
+</head>
+<body>
+
+  <h1>Flexbox Demos</h1>
+
+  <!-- BASIC FLEXBOX -->
+  <section id="flex__basic">
+    <h2>Basic</h2>
+    <div class="flex__basic_container">
+      <div class="box box-1"><p>1</p></div>
+      <div class="box box-2"><p>2</p></div>
+      <div class="box box-3"><p>3</p></div>
+      <!-- leave box-4 commented out for now -->
+      <!-- <div class="box box-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laudantium eveniet cupiditate.
+        </p>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- OFFSET PROPORTIONS -->
+  <section>
+    <h2>Offset Proportions</h2>
+    <div class="flex__offset_proportions_container">
+      <div>1</div>
+      <div>2</div>
+    </div>
+  </section>
+
+  <!-- GROW, SHRINK, WRAP -->
+  <section id="flex__grow_shrink_wrap">
+    <h2>Grow, Shrink, Wrap:<br><span>Feature Box Component</span></h2>
+    <div class="flex__feature_box_container">
+      <!-- div to control the image -->
+      <div>
+        <img class="img_cover"
+             src="https://placehold.co/800x400/705c92/fdffc6?text=Featured+Image"
+             alt=""
+        />
+      </div>
+      <div class="box-2">2</div>
+      <div class="box-3">3</div>
+      <div class="box-4">4</div>
+      <div class="box-5">5</div>
+    </div>
+  </section>
+
+</body>
+</html>

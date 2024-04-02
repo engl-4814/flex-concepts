@@ -114,17 +114,24 @@ section {
 */
 .flex__offset_proportions_container {
   display: flex;
-  .box {
 
-  }
+  
 }
 
+.div_1 {
+  flex: 1 2 400px
+
+}
+
+.div_2 {
+ width: 200px
+}
 
 /*3. FEATURE BOX
   Let's use some more nuanced selection and "flex" rule work on the flex items to create a reusable "Feature Box" component.
 */
 
-.flex__offset_proportions_container{
+.flex__feature_box_container {
   display: flex;
   
 }

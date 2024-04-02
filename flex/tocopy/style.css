@@ -93,6 +93,10 @@ section {
   /* Start your flexbox practice after this comment */
 }
 
+.box {
+  display: flex;
+  flex-direction:
+}
 
 /*2. OFFSET PROPORTIONS WITH GROW, SHRINK, and BASIS
   1. What element should you select and define "display: flex;"?
